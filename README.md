@@ -109,33 +109,33 @@ Exemplo de requisição:
 
 Retorna os dados da atividade cadastrada.
 
- # Listar atividades
+ ## Listar atividades
 GET /atividades
 
 Retorna todas as atividades cadastradas.
 As atividades são organizadas por data, da mais recente para a mais antiga.
 
- # Buscar uma atividade
+ ## Buscar uma atividade
 GET /atividades/<id>
 
 Exemplo:
 GET /atividades/1
 
-# Retorna uma atividade específica.
+## Retorna uma atividade específica.
 Caso o ID não exista, a API retorna erro 404.
 
- # Atualizar atividade
+ ## Atualizar atividade
 PUT /atividades/<id>
 
 Permite alterar os dados de uma atividade existente.
 
-# Excluir atividade
+## Excluir atividade
 DELETE /atividades/<id>
 
 Remove uma atividade do banco de dados.
 Em caso de sucesso, a API retorna o status 204.
 
-# Validação dos dados
+## Validação dos dados
 A API realiza validações antes de inserir ou atualizar uma atividade.
 Entre elas:
 verificação dos campos obrigatórios;
