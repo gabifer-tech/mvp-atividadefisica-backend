@@ -32,11 +32,14 @@ criar as rotas da API;
 validar os dados recebidos;
 realizar operações de CRUD;
 retornar os dados em formato JSON.
+
 database.py
 Responsável pela configuração e comunicação com o banco de dados SQLite.
 Também define os tipos de atividade e os níveis de intensidade aceitos pela aplicação.
+
 atividades.db
 Banco de dados SQLite utilizado para armazenar as atividades cadastradas.
+
 requirements.txt
 Arquivo que contém as dependências necessárias para executar o projeto.
 
@@ -45,7 +48,6 @@ O sistema utiliza SQLite.
 A tabela principal é:
 
 CampoTipoDescrição
-
 
 id
 INTEGER
