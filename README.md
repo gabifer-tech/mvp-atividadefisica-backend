@@ -1,10 +1,12 @@
 # mvp-atividadefisica-backend
 Projeto para a disciplina de desenvolvimento fullstack Puc-Rio
-Sobre o projeto
+# Sobre o projeto
+
 Este projeto consiste em uma API REST desenvolvida para realizar o gerenciamento de atividades físicas.
 A API permite cadastrar, consultar, atualizar e excluir atividades físicas, armazenando os dados em um banco de dados SQLite.
 O projeto foi desenvolvido como uma aplicação prática para estudo de desenvolvimento de software, integração entre back-end e banco de dados e criação de APIs REST.
-Tecnologias utilizadas
+
+# Tecnologias utilizadas
 Python
 Flask 3.0.3
 SQLite
@@ -37,7 +39,8 @@ atividades.db
 Banco de dados SQLite utilizado para armazenar as atividades cadastradas.
 requirements.txt
 Arquivo que contém as dependências necessárias para executar o projeto.
-Banco de dados
+
+# Banco de dados
 O sistema utiliza SQLite.
 A tabela principal é:
 
@@ -90,7 +93,7 @@ Os níveis de intensidade disponíveis são:
 Baixa
 Média
 Alta
- Endpoints
+ # Endpoints
  Criar atividade
 POST /atividades
 
@@ -106,32 +109,33 @@ Exemplo de requisição:
 
 Retorna os dados da atividade cadastrada.
 
- Listar atividades
+ # Listar atividades
 GET /atividades
 
 Retorna todas as atividades cadastradas.
 As atividades são organizadas por data, da mais recente para a mais antiga.
 
- Buscar uma atividade
+ # Buscar uma atividade
 GET /atividades/<id>
 
 Exemplo:
 GET /atividades/1
 
-Retorna uma atividade específica.
+# Retorna uma atividade específica.
 Caso o ID não exista, a API retorna erro 404.
 
- Atualizar atividade
+ # Atualizar atividade
 PUT /atividades/<id>
 
 Permite alterar os dados de uma atividade existente.
 
-Excluir atividade
+# Excluir atividade
 DELETE /atividades/<id>
 
 Remove uma atividade do banco de dados.
 Em caso de sucesso, a API retorna o status 204.
-Validação dos dados
+
+# Validação dos dados
 A API realiza validações antes de inserir ou atualizar uma atividade.
 Entre elas:
 verificação dos campos obrigatórios;
@@ -146,7 +150,7 @@ data
 duracao
 intensidade
 
-Documentação da API
+# Documentação da API
 A aplicação utiliza Flasgger para disponibilizar documentação baseada em Swagger.
 A documentação descreve a API e seus endpoints diretamente no projeto.
  Como executar
